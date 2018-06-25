@@ -119,12 +119,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a4d7f64a582754b8d64838d795a0d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFX: {fileID: 1392976283957390, guid: 9acf6ff221dedd847be00a0c26493e27,
+  explosionFX: {fileID: 1510931835675500, guid: 7cb425dccb2f6784680de6c90b1ab478,
     type: 2}
+  points: 1
   asteroidChildren:
   - {fileID: 1652697268089142, guid: edf3fb7d39e632a4a8cc80fa4cc05a39, type: 2}
   - {fileID: 1652697268089142, guid: edf3fb7d39e632a4a8cc80fa4cc05a39, type: 2}
-  points: 1
 --- !u!114 &114387031299706856
 MonoBehaviour:
   m_ObjectHideFlags: 1

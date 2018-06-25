@@ -30,12 +30,13 @@ public class AsteroidCollisions : MonoBehaviour {
             Destroy(gameObject);
         }
 
-      //  if(collision.collider.tag == "Ship")
-      //  {
-      //      gameManager.SendMessage("OnMinusLife");
-      //      Destroy(collision.gameObject);
-      //      Destroy(gameObject);
-      //  }
+         if(collision.collider.tag == "Ship")
+         {
+            GameObject explosion = Instantiate(explosionFX, transform.position, transform.rotation);
+            Destroy(explosion, 3f);
+
+            Destroy(gameObject);
+         }
     }
 
     void InstantiateChildren()
