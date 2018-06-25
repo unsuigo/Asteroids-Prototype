@@ -485,6 +485,7 @@ Transform:
   m_Children:
   - {fileID: 1673780259}
   - {fileID: 298059647}
+  - {fileID: 1523558153}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2056,6 +2057,78 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1523558152
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 190921828}
+    m_Modifications:
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 38.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198496670885384692, guid: 7cb425dccb2f6784680de6c90b1ab478,
+        type: 2}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 108405065616809908, guid: d622a655ecf597d46b327aa42a1f1e93,
+        type: 2}
+    - target: {fileID: 198947480984934874, guid: 7cb425dccb2f6784680de6c90b1ab478,
+        type: 2}
+      propertyPath: randomSeed
+      value: 247026477
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510931835675500, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+      propertyPath: m_Name
+      value: ExplosionFX_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 198496670885384692, guid: 7cb425dccb2f6784680de6c90b1ab478,
+        type: 2}
+      propertyPath: randomSeed
+      value: -827998009
+      objectReference: {fileID: 0}
+    - target: {fileID: 198323202719066352, guid: 7cb425dccb2f6784680de6c90b1ab478,
+        type: 2}
+      propertyPath: randomSeed
+      value: 994104487
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7cb425dccb2f6784680de6c90b1ab478, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1523558153 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4473642914732662, guid: 7cb425dccb2f6784680de6c90b1ab478,
+    type: 2}
+  m_PrefabInternal: {fileID: 1523558152}
 --- !u!1 &1530891279
 GameObject:
   m_ObjectHideFlags: 0
