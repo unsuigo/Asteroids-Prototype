@@ -1079,7 +1079,7 @@ MonoBehaviour:
   life: 0
   score: 0
   highrScore: 0
-  qtyAsteroidsLevel0: 3
+  qtyAsteroidsLevel0: 10
   level: 0
   timeDelaySpawnAsteroids: 1
 --- !u!4 &653156456

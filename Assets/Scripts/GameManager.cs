@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Instantiate(screenBorder, transform.position, transform.rotation);     
+        //ScreenBorder for loop the screen
+        Instantiate(screenBorder, transform.position, transform.rotation);
         UpdateHighScore();
     }
 
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         score = 0;
-        gameObject.SendMessage("OnUpdateScore", life);
+        gameObject.SendMessage("OnUpdateScore", score);
 
 
         life = maxLives;
@@ -46,13 +47,14 @@ public class GameManager : MonoBehaviour
     public void OnReset()
     {
         CleanScene();
-       
+
         Invoke("Restart", 2);
     }
 
 
     void Restart()
     {
+        StoreData();
         score = 0;
         gameObject.SendMessage("OnUpdateScore", score);
         StartCoroutine(SpawnLevel_0());
@@ -62,9 +64,9 @@ public class GameManager : MonoBehaviour
 
     void OnScoreAdd(int points)
     {
-       // Debug.Log("Got Points " + points);
+        // Debug.Log("Got Points " + points);
         score += points;
-       // Debug.Log("Score is " + score);
+        // Debug.Log("Score is " + score);
         gameObject.SendMessage("OnUpdateScore", score);
     }
 
@@ -72,13 +74,13 @@ public class GameManager : MonoBehaviour
     //invoke from collisions
     void OnMinusLife()
     {
-       // Debug.Log("Dead");
+        // Debug.Log("Dead");
         life -= 1;
-      //  Debug.Log("Lifes left " + life);
+        //  Debug.Log("Lifes left " + life);
         gameObject.SendMessage("OnUpdateLife", life);
         if (life <= 0)
         {
-          StartCoroutine  (GameOver());
+            StartCoroutine(GameOver());
         }
         else
         {
@@ -91,10 +93,11 @@ public class GameManager : MonoBehaviour
     {
         CleanScene();
         Debug.Log("************Game Over**************");
-        gameObject.SendMessage("GameOverUI", life);
-
+        gameObject.SendMessage("GameOverUI");
+       
         yield return new WaitForSeconds(2);
-        gameObject.SendMessage("GameOverMenuUI", life);
+        UpdateHighScore();
+        gameObject.SendMessage("GameOverMenuUI");
     }
 
     void NextLevel()
@@ -159,8 +162,7 @@ public class GameManager : MonoBehaviour
 
         if (ship != null)
             Destroy(ship);
-
-        score = 0;
+        StoreData();
     }
 
     void OnDestroy()
