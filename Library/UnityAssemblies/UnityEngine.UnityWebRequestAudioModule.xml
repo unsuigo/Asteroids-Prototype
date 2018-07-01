@@ -14,6 +14,16 @@
         <para>Returns the downloaded AudioClip, or null. (Read Only)</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.Networking.DownloadHandlerAudioClip.compressed">
+      <summary>
+        <para>Create AudioClip that is compressed in memory.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Networking.DownloadHandlerAudioClip.streamAudio">
+      <summary>
+        <para>Create streaming AudioClip.</para>
+      </summary>
+    </member>
     <member name="M:UnityEngine.Networking.DownloadHandlerAudioClip.#ctor(System.String,UnityEngine.AudioType)">
       <summary>
         <para>Constructor, specifies what kind of audio data is going to be downloaded.</para>
@@ -93,6 +103,11 @@
       <returns>
         <para>A UnityWebRequest properly configured to download a movie clip and convert it to a MovieTexture.</para>
       </returns>
+    </member>
+    <member name="A:UnityEngine.UnityWebRequestAudioModule">
+      <summary>
+        <para>The UnityWebRequestAudio module provides the DownloadHandlerAudioClip class to use UnityWebRequest to download AudioClips.</para>
+      </summary>
     </member>
   </members>
 </doc>
