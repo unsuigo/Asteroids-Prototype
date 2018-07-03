@@ -6,6 +6,9 @@ public class ShipControl : MonoBehaviour
     public float force;
     public float turnForce;
 
+    float axelerometrX;
+    float axelerometrY;
+
     [Header("For debug")]
     public float forceInput;
     public float turnInput;
@@ -28,9 +31,14 @@ public class ShipControl : MonoBehaviour
 
     void Update()
     {
+        axelerometrX = Input.acceleration.x;
+        axelerometrY = Input.acceleration.y;
 
+        Debug.Log("X " + axelerometrX  + "Y  " + axelerometrY);
         forceInput = Input.GetAxis("Vertical");
         turnInput = Input.GetAxis("Horizontal");
+
+
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -45,7 +53,7 @@ public class ShipControl : MonoBehaviour
         }
 
 
-        transform.Rotate(Vector3.forward * turnInput * -turnForce * Time.deltaTime);
+        transform.Rotate(Vector3.forward * axelerometrX * -turnForce * Time.deltaTime);
 
     }
 
@@ -53,7 +61,7 @@ public class ShipControl : MonoBehaviour
 
     private void FixedUpdate()
     {
-        shipRig.AddRelativeForce(Vector2.up * force * forceInput);
+        shipRig.AddRelativeForce(Vector2.up * force * axelerometrY);
     }
 
 
