@@ -21,14 +21,14 @@ public class ShipCollisions : MonoBehaviour {
 
     void ShipDead()
     {
-        FindObjectOfType<AudioManager>().StopClip("Engine");
+        AudioManager.Instance.StopClip("Engine");
 
-        GameObject manager = GameObject.Find("GameManager");
+        // GameObject manager = GameObject.Find("GameManager");
 
-        if (manager != null)
-        {
+       
            // manager.SendMessage("OnReset");
-            manager.SendMessage("OnMinusLife");
-        }
+            // manager.SendMessage("OnMinusLife");
+            GameManager.Instance.OnMinusLife();
     }
+       
 }

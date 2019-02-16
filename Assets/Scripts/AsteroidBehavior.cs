@@ -20,7 +20,7 @@ public class AsteroidBehavior : MonoBehaviour {
     void Start () {
 
         RandomForceAndTorque();
-        manager = GameObject.Find("GameManager");
+      
     }
 
   // public void OnCollisionEnter2D(Collision2D collision)

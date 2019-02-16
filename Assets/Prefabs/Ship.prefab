@@ -152,7 +152,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1043186193323466, guid: 3a179b32408b7e244ae9972416222d14,
     type: 2}
   bulletForce: 10000
-  bulletTime: 1
+  bulletTime: 0.51
 --- !u!114 &114763878830003212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,8 +178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipRig: {fileID: 50996096117717678}
-  force: 3.89
-  turnForce: 5.59
+  force: 10
+  turnForce: 50
   forceInput: 1
   turnInput: 1
 --- !u!212 &212696908918672434

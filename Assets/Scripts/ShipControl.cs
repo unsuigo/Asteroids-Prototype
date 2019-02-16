@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using SingletonT;
 
-public class ShipControl : MonoBehaviour
+public class ShipControl : SingletonT<ShipControl>
 {
     public Rigidbody2D shipRig;
     public float force;
@@ -13,47 +14,43 @@ public class ShipControl : MonoBehaviour
     public float forceInput;
     public float turnInput;
 
-    //Singleton will avoid second ship 
-    public static ShipControl instance;
+  
+    private MobileController mobControll;
 
-    //Singleton init
-    void Awake()
+   
+
+    private void Start()
     {
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
+        mobControll = FindObjectOfType<MobileController>();
     }
 
 
     void Update()
     {
-        axelerometrX = Input.acceleration.x;
-        axelerometrY = Input.acceleration.y;
+       
 
-        Debug.Log("X " + axelerometrX  + "Y  " + axelerometrY);
-        forceInput = Input.GetAxis("Vertical");
-        turnInput = Input.GetAxis("Horizontal");
+        // forceInput = Input.GetAxis("Vertical");
+        // turnInput = Input.GetAxis("Horizontal");
+
+        forceInput = mobControll.Vertical();
+        turnInput = mobControll.Horizontal();
 
 
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             Debug.Log("Play Clip ");
-            FindObjectOfType<AudioManager>().PlayClip("Engine");
+            AudioManager.Instance.PlayClip("Engine");
         }
 
         if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             Debug.Log("Play Clip ");
-            FindObjectOfType<AudioManager>().StopClip("Engine");
+            AudioManager.Instance.StopClip("Engine");
         }
 
 
-        transform.Rotate(Vector3.forward * axelerometrX * -turnForce * Time.deltaTime);
+        transform.Rotate(Vector3.forward * turnInput * -turnForce * Time.deltaTime);
 
     }
 
@@ -61,7 +58,7 @@ public class ShipControl : MonoBehaviour
 
     private void FixedUpdate()
     {
-        shipRig.AddRelativeForce(Vector2.up * force * axelerometrY);
+        shipRig.AddRelativeForce(Vector2.up * force * forceInput);
     }
 
 

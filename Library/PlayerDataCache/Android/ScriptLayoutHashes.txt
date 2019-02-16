@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/Unity2017/Projects2017/Asteroids/asteroids2.apk
+D:/Unity2017/Projects2017/Asteroids/asteroids6.apk
 SceneListBegin?
 Assets/Scenes/MainScene.unity
 SceneListEnd?
@@ -22,7 +22,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
-6a2951ab5e4b0040f1623443d5712d75 Unity.TextMeshPro.dll:TMPro.TMP_Text
+b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
 486cd95c82d8305219c352c06b776e1f Unity.Transforms.dll:Unity.Transforms.TransformExternalComponent
 56881e5d0f6944ce9a9c941159bf151e Unity.Transforms.dll:Unity.Transforms.LocalRotationComponent
 334e39ca455cb14f31a27fd92b1746da Unity.Transforms.dll:Unity.Transforms.MoveSpeedComponent
@@ -158,7 +158,7 @@ da21fc3f8056b1f91c3dd09c7bf4f90a UnityEngine.Networking.dll:UnityEngine.Networki
 fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 7ca56e063bd071986fff4f513cc4f477 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
-e46113951763d45502a1260c6ea4c4e8 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
+e53cc67d84060d628c7f03fc725766d8 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 392c5b921098bd4c139d9146d0efa6d7 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 486cd95c82d8305219c352c06b776e1f Unity.Transforms.Hybrid.dll:Unity.Transforms.CopyInitialTransformFromGameObjectComponent
 486cd95c82d8305219c352c06b776e1f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -179,13 +179,14 @@ d75dc834c5dec688db75a55a1724c90f UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 98d69a140ec0084cde3b6a5e09aea295 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-5cbab06d4665e1f12ac7d37549ff3795 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
+aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 4ed3b97d0e86de17e6c7cbb330dba4df Unity.Transforms2D.dll:Unity.Transforms2D.Heading2DComponent
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+e3ccc5711c7b00be411c2d2479d2e1d3 Assembly-CSharp.dll:.MobileController
 8cddfc622304d1dccf4c517e01af4105 Assembly-CSharp.dll:.AudioManager
 6a659755c40d31e3a7e4ff8102c04fce Unity.Transforms.dll:Unity.Transforms.LocalPositionComponent
-87b61a1ed977faf06f8b573a1c042d91 Unity.TextMeshPro.dll:TMPro.TextMeshPro
+2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 486cd95c82d8305219c352c06b776e1f Unity.Entities.Hybrid.dll:Unity.Entities.GameObjectEntity
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh

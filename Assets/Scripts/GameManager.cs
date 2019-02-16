@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SingletonT;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonT<GameManager>
 {
     [Header("Spawn Prefabs")]
     public GameObject shipPrefab;
@@ -62,7 +63,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    void OnScoreAdd(int points)
+   public void OnScoreAdd(int points)
     {
         // Debug.Log("Got Points " + points);
         score += points;
@@ -72,7 +73,7 @@ public class GameManager : MonoBehaviour
 
 
     //invoke from collisions
-    void OnMinusLife()
+   public void OnMinusLife()
     {
         // Debug.Log("Dead");
         life -= 1;
@@ -162,6 +163,7 @@ public class GameManager : MonoBehaviour
 
         if (ship != null)
             Destroy(ship);
+            
         StoreData();
     }
 

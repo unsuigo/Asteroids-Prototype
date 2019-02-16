@@ -1,26 +1,20 @@
 ﻿using System;
 using UnityEngine;
+using SingletonT;
 
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : SingletonT<AudioManager>
 {
 
     public Sound[] sounds;
 
     //Singleton will avoid second audioManager if we will change the scene
-    public static AudioManager instance;
+    
 
 
-    void Awake()
+    void Start()
     {
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject); 
-            return;
-        }
-
+       
         // if will reload scene
         DontDestroyOnLoad(gameObject);
 
@@ -34,13 +28,8 @@ public class AudioManager : MonoBehaviour
             sound.source.loop = sound.loop;
         }
         
-    }
-
-    private void Start()
-    {
         PlayClip("BackGround");
     }
-
 
 
     public void PlayClip(string name)

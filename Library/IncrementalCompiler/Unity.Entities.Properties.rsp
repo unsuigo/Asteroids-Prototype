@@ -34,7 +34,6 @@
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.LocalizationModule.dll
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
--r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.PhysicsModule.dll
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.Physics2DModule.dll
@@ -74,11 +73,11 @@
 -r:D:/Unity2017/Projects2017/Asteroids/Library/FacebookSDK/Facebook.Unity.Settings.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
--r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
--r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll
+-r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+-r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll
@@ -95,16 +94,16 @@
 -r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
 -r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
 -r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.collections@0.0.9-preview.1/System.Runtime.CompilerServices.Unsafe.dll
--r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
--r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
--r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll
+-r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll
+-r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll
 -r:D:\Unity2018\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll
@@ -219,6 +218,7 @@
 -d:UNITY_2017_1_OR_NEWER
 -d:UNITY_2017_2_OR_NEWER
 -d:UNITY_2017_3_OR_NEWER
+-d:UNITY_2017_4_OR_NEWER
 -d:UNITY_2018_1_OR_NEWER
 -d:UNITY_2018_2_OR_NEWER
 -d:UNITY_2018_2_0
@@ -302,8 +302,8 @@
 -d:UNITY_EDITOR_64
 -d:UNITY_EDITOR_WIN
 -d:ENABLE_UNITY_COLLECTIONS_CHECKS
+-d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
--d:ENABLE_VSTU
 -d:UNITY_HAS_GOOGLEVR
 -d:UNITY_HAS_TANGO
 -i:C:/Users/unsuy/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.entities@0.0.12-preview.1/Unity.Entities.Properties/EntityContainer.cs

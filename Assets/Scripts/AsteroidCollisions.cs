@@ -10,19 +10,12 @@ public class AsteroidCollisions : MonoBehaviour {
     public GameObject[] asteroidChildren;
    
 
-    void Start()
-    {
-        gameManager = GameObject.Find("GameManager");
-    }
-
-
-
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Bullet")
         {
             Debug.Log("Collision with " + collision.gameObject.name);
-            gameManager.SendMessage("OnScoreAdd", points);
+            GameManager.Instance.OnScoreAdd(points);
             GameObject explosion = Instantiate(explosionFX, transform.position, transform.rotation);
             Destroy(explosion, 3f);
             InstantiateChildren();
