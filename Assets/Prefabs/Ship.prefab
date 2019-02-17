@@ -182,6 +182,12 @@ MonoBehaviour:
   turnForce: 50
   forceInput: 1
   turnInput: 1
+  leftEnginePrefab: {fileID: 1181215823638142, guid: b1af3d5e737b13e48a255049f2b10978,
+    type: 2}
+  rightEnginePrefab: {fileID: 1023376357989758, guid: 106fab869ca70dd4ba3d92c6848f70db,
+    type: 2}
+  mainEnginePrefab: {fileID: 1917758556222878, guid: 3a4079e1637b10b4489ef09f4df09a0b,
+    type: 2}
 --- !u!212 &212696908918672434
 SpriteRenderer:
   m_ObjectHideFlags: 1

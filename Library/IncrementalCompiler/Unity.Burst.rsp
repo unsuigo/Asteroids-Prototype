@@ -2,7 +2,7 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:D:/Unity2017/Projects2017/Asteroids/Temp/Unity.Burst.dll
+-out:D:/UNITY/Asteroids/Temp/Unity.Burst.dll
 -nostdlib
 -unsafe
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.dll
@@ -65,7 +65,7 @@
 -r:D:\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
 -r:D:\Unity2018\Editor\Data\Managed/UnityEditor.dll
 -r:D:\Unity2018\Editor\Data\Managed/Unity.Locator.dll
--r:D:/Unity2017/Projects2017/Asteroids/Library/FacebookSDK/Facebook.Unity.Settings.dll
+-r:D:/UNITY/Asteroids/Library/FacebookSDK/Facebook.Unity.Settings.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
 -r:D:/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll

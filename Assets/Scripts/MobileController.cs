@@ -51,14 +51,17 @@ public class MobileController : MonoBehaviour , IDragHandler, IPointerUpHandler,
     public float Horizontal()
     {
         print("Horizontal");
-        if (inputVector.x != 0) return inputVector.x;
-        else return Input.GetAxis("Horizontal");
+        if (inputVector.x != 0){ 
+            print("from IJostic");
+            return inputVector.x;}
+        else {
+            print("Get Horizontal axis");
+            return Input.GetAxis("Horizontal");}
 
     }
 
     public float Vertical()
     {
-
         print("Vertical");
         if (inputVector.y != 0) return inputVector.y;
         else return Input.GetAxis("Vertical");
